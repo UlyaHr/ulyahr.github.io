@@ -1,0 +1,431 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <link rel="icon" type="image/png" href="images/favicon2.png">
+    <link rel="preconnect" href="https://fonts.gstatic.com" />
+    <link
+      href="https://fonts.googleapis.com/css2?family=Jura:wght@300;400;700&display=swap"
+      rel="stylesheet"
+    />
+    <link
+      rel="stylesheet"
+      href="https://cdnjs.cloudflare.com/ajax/libs/font-awesome/5.15.2/css/all.min.css"
+      integrity="sha512-HK5fgLBL+xu6dm/Ii3z4xhlSUyZgTT9tuc/hSrtw6uzJOvgRr2a9jyxxT1ely+B+xFAmJKVSTbpM/CuL7qxO8w=="
+      crossorigin="anonymous"
+    />
+    <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.5.0/swiper-bundle.min.css" />
+    <link rel="stylesheet" href="dist/style.css" />
+    <title>Portfolio</title>
+  </head>
+
+  <body>
+
+    <header class="header">
+      <div class="overlay"></div>
+      <nav class="container container--pall flex flex-ac flex-jb">
+        <a class="header__logo" href="#hero">&ltul&gt;</a>
+
+        <button class="header__menu hide-for-desktop">
+          <svg viewBox="0 0 64 48">
+            <path d="M19,15 L45,15 C70,15 58,-2 49.0177126,7 L19,37"></path>
+            <path d="M19,24 L45,24 C61.2371586,24 57,49 41,33 L32,24"></path>
+            <path d="M45,33 L19,33 C-8,33 6,-2 22,14 L45,37"></path>
+          </svg>
+        </button>
+
+        <div class="header__links hide-for-mobile">
+          <a data-page="hero" href="#hero">Home</a>
+          <a data-page="about" href="#about">About</a>
+          <a data-page="projects" href="#projects">Projects</a>
+          <a data-page="contact" href="#contact">Contact</a>
+          <div class="header__links--active"></div>
+        </div>
+
+        <div class="darkmode__toggle hide-for-mobile">
+          <input type="checkbox" class="chk" id="chk" />
+          <label for="chk" class="toggle">
+            <span class="star star1"></span>
+            <span class="star star2"></span>
+            <span class="star star3"></span>
+            <span class="star star4"></span>
+            <span class="star star5"></span>
+            <span class="star star6"></span>
+            <span class="handler">
+              <span class="crater crater1"></span>
+              <span class="crater crater2"></span>
+              <span class="crater crater3"></span>
+            </span>
+          </label>
+        </div>
+      </nav>
+    </header>
+
+    <main>
+      <section class="hero" id="hero">
+        <div class="container container--pall flex-as">
+          <div class="hero__content">
+            <div class="hero__content__left">
+              <p>Hello world, My name is</p>
+              <h1>Ulya Habiburrahman</h1>
+              <h2>I build things for the web.</h2>
+              <p>
+                I'm a self-taught web developer based in Yogyakarta, specializing in
+                crafting amazing front-end stack of a websites.
+              </p>
+              <div class="button__wrapper">
+                <a class="button" href="#contact">Get in Touch</a>
+                <a href="#" target="_blank" class="button"> <i class="fas fa-download"></i> Resume</a>
+              </div>
+            </div>
+            <div class="hero__content__right">
+              <lottie-player class="hero__lottie" src="lotties/hero-light.json"  background="transparent"  speed="1" loop  autoplay></lottie-player>
+            </div>
+          </div>
+        </div>
+        <div class="hero__divider">
+          <svg
+            class="editorial"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 "
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 
+                  58-18 88-18s
+                  58 18 88 18 
+                  58-18 88-18 
+                  58 18 88 18
+                  v44h-352z"
+              />
+            </defs>
+            <g class="parallax1">
+              <use xlink:href="#gentle-wave" x="50" y="3" />
+            </g>
+            <g class="parallax2">
+              <use xlink:href="#gentle-wave" x="50" y="0" />
+            </g>
+            <g class="parallax3">
+              <use xlink:href="#gentle-wave" x="50" y="9" />
+            </g>
+            <g class="parallax4">
+              <use xlink:href="#gentle-wave" x="50" y="6" />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="about" id="about">
+        <div class="container container--px flex flex-dc flex-ac flex-jc">
+          <h1>About Me</h1>
+          <div class="blog-slider">
+            <div class="blog-slider__wrp swiper-wrapper">
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  
+                  <img src="images/intro.webp" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Hello, I am</span>
+                  <div class="blog-slider__title">Ulya Habiburrahman.</div>
+                  <div class="blog-slider__text">I enjoy channeling my creativity and logical thinking through crafting Front-end stack. My goal is to always build products that provide pixel-perfect, performant experiences. </div>
+                </div>
+              </div>
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="images/skills.webp" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Technical Skills</span>
+                  <div class="blog-slider__title">Frontend Developer</div>
+                  <div class="blog-slider__text">
+                    Technologies I've working with recently:
+                    <div class="skills-container">
+                      <span>React</span>
+                      <span>Javascript (ES6+)</span>
+                      <span>HTML & (S)CSS</span>
+                      <span>PWA</span>
+                      <span>Bootstrap 4+</span>
+                      <span>Node.js</span>
+                    </div>
+                    Tools:
+                    <div class="tools-container">
+                      <span>Chrome</span>
+                      <span>VS Code</span>
+                      <span>Postman</span>
+                      <span>Git</span>
+                    </div>
+                  </div>
+                </div>
+              </div>
+              
+              <div class="blog-slider__item swiper-slide">
+                <div class="blog-slider__img">
+                  <img src="images/academic.webp" alt="">
+                </div>
+                <div class="blog-slider__content">
+                  <span class="blog-slider__code">Academic Background</span>
+                  <div class="blog-slider__title">Bachelor of Science</div>
+                  <div class="blog-slider__text">I was graduated from Universitas Gadjah Mada, where I was majoring in Geophysics. During college I became Computation Lab Asistant that teach sophomore student about Data Processing and Visualization using Python 3.</div>
+                </div>
+              </div>
+              
+            </div>
+            <div class="blog-slider__pagination"></div>
+          </div>
+        </div>
+        <div class="about__divider">
+          <svg
+            class="editorial"
+            xmlns="http://www.w3.org/2000/svg"
+            xmlns:xlink="http://www.w3.org/1999/xlink"
+            viewBox="0 24 150 28 "
+            preserveAspectRatio="none"
+          >
+            <defs>
+              <path
+                id="gentle-wave"
+                d="M-160 44c30 0 
+                  58-18 88-18s
+                  58 18 88 18 
+                  58-18 88-18 
+                  58 18 88 18
+                  v44h-352z"
+              />
+            </defs>
+            <g class="parallax1">
+              <use xlink:href="#gentle-wave" x="50" y="3" />
+            </g>
+            <g class="parallax2">
+              <use xlink:href="#gentle-wave" x="50" y="0" />
+            </g>
+            <g class="parallax3">
+              <use xlink:href="#gentle-wave" x="50" y="9" />
+            </g>
+            <g class="parallax4">
+              <use xlink:href="#gentle-wave" x="50" y="6" />
+            </g>
+          </svg>
+        </div>
+      </section>
+
+      <section class="projects" id="projects">
+        <div class="container container--px flex flex-dc flex-jc">
+          <h1>Featured Projects</h1>
+          <div class="projects__grid">
+            <div class="project-card project-1">
+              <div class="meta">
+                <div class="photo" style="background-image: url(images/oishi.webp)"></div>
+                <ul class="details">
+                  <li class="date">Dec. 19, 2020</li>
+                  <li class="tags">
+                    <ul>
+                      <li><a href="#">PWA</a></li>
+                      <li><a href="#">Accessability</a></li>
+                      <li><a href="#">JS ES6+</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h1><a href="https://ulyahr.github.io/" target="_blank">Oishi</a></h1>
+                <h2>IDCamp FWDE 2020 Project</h2>
+                <p>Explore recommended restaurant nearby your place with Oishi. You can review and bookmark your favorite restaurant so it can easily accessed in the future. Oishi have full PWA Support.</p>
+                <p class="read-more">
+                  <a href="https://ulyahr.github.io/" target="_blank">Live View</a>
+                </p>
+              </div>
+            </div>
+            <div class="project-card project-2 alt">
+              <div class="meta">
+                <div class="photo" style="background-image: url(images/bianconeri.webp)"></div>
+                <ul class="details">
+                  <li class="date">Aug. 04, 2020</li>
+                  <li class="tags">
+                    <ul>
+                      <li><a href="#">PWA</a></li>
+                      <li><a href="#">Firebase</a></li>
+                      <li><a href="#">Materialize</a></li>
+                      <li><a href="#">Football API</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h1><a href="https://bianconeri-pwa.web.app/" target="_blank">Bianconeri</a></h1>
+                <h2>Dicoding PWA Final Project</h2>
+                <p> Bianconeri makes it easier for Juventini to keep updated on current team info. Bianconeri is a Progressive Web App, so you could easily add it to your mobile home screen like a native app.</p>
+                <p class="read-more">
+                  <a href="https://bianconeri-pwa.web.app/" target="_blank">Live View</a>
+                </p>
+              </div>
+            </div>
+            <div class="project-card project-3">
+              <div class="meta">
+                <div class="photo" style="background-image: url(images/crud.webp)"></div>
+                <ul class="details">
+                  <li class="date">Jan. 11, 2021</li>
+                  <li class="tags">
+                    <ul>
+                      <li><a href="#">Fullstack</a></li>
+                      <li><a href="#">Express</a></li>
+                      <li><a href="#">MySQL</a></li>
+                      <li><a href="#">React</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h1><a href="https://github.com/UlyaHr/Arkademy-FullstackCRUD" target="_blank">Basic CRUD</a></h1>
+                <h2>Arkademy Technical Test</h2>
+                <p>This project was build for Arkademy bootcamp techical test. This web app have basic CRUD (Create, Read, Update, Delete) functionality. Built with React on the front-end, Express on the back-end, and MySQL on the databases.</p>
+                <p class="read-more">
+                  <a href="https://github.com/UlyaHr/Arkademy-FullstackCRUD" target="_blank">Repo</a>
+                </p>
+              </div>
+            </div>
+            <div class="project-card project-4 alt">
+              <div class="meta">
+                <div class="photo" style="background-image: url(images/fcc.webp)"></div>
+                <ul class="details">
+                  <li class="date">Feb. 08, 2021</li>
+                  <li class="tags">
+                    <ul>
+                      <li><a href="#">Responsive</a></li>
+                      <li><a href="#">HTML5</a></li>
+                      <li><a href="#">CSS3</a></li>
+                    </ul>
+                  </li>
+                </ul>
+              </div>
+              <div class="description">
+                <h1><a href="https://codepen.io/ulyahr" target="_blank">Responsive Web Design</a></h1>
+                <h2>FreeCodeCamp Project</h2>
+                <p>This repo contains my pens to each submission required for Web Responsive Course at FreeCodeCamp. I built each project with modern paradigm that was teached from the course.</p>
+                <p class="read-more">
+                  <a href="https://codepen.io/ulyahr" target="_blank">Codepen</a>
+                </p>
+              </div>
+            </div>
+          </div>
+          <div class="btn-wrapper"><a class="button" href="https://github.com/ulyahr" target="_blank"><i class="fab fa-github"></i> Explore More</a></div>
+      </section>
+
+      <section class="contact" id="contact">
+        <h1 class="contact__title">Get in Touch</h1>
+        <div class="container container--px flex flex-ac flex-jc">
+          <div class="social__links">
+            <p>Currently, I am actively looking for opportunities, either full-time or freelance. If you are interested in working together, do not hesitate to contact me. I can be found at:</p>
+            <div class="social__links--wrapper">
+              <a href="https://github.com/UlyaHr" target="_blank" title="Github">
+                <lottie-player src="lotties/github.json" style="width: 40px; height: 40px;" background="transparent"  speed="1" hover loop></lottie-player>
+              </a>
+              <a href="https://codepen.io/ulyahr" target="_blank" title="Codepen">
+                <lottie-player src="lotties/codepen.json" style="width: 40px; height: 40px;" background="transparent"  speed="1" hover loop></lottie-player>
+              </a>
+              <a href="mailto:habiburrahman.ulya@gmail.com" title="habiburrahman.ulya@gmail.com">
+                <lottie-player src="lotties/mail.json" style="width: 40px; height: 40px;" background="transparent"  speed="1" hover></lottie-player>
+              </a>
+              <a href="https://www.linkedin.com/in/ulya-habiburrahman-045a1514a/" target="_blank" title="LinkedIn">
+                <lottie-player src="lotties/linkedin.json" style="width: 40px; height: 40px;" background="transparent"  speed="1" hover loop></lottie-player>
+              </a>
+              <a href="https://www.instagram.com/ulyahr_" target="_blank" title="Instagram">
+                <lottie-player src="lotties/instagram.json" style="width: 40px; height: 40px;" background="transparent"  speed="1" hover></lottie-player>
+              </a>
+              <a href="https://twitter.com/ulhabiburrahman" target="_blank" title="Twitter">
+                <lottie-player src="lotties/twitter.json" style="width: 40px; height: 40px;" background="transparent"  speed="1" hover loop></lottie-player>
+              </a>
+            </div>
+          </div>
+          <form name="submit-to-google-sheet">
+            
+            <input
+              name="name"
+              type="text"
+              class="feedback-input"
+              placeholder="Name"
+              required
+            />
+            <input
+              name="email"
+              type="email"
+              class="feedback-input"
+              placeholder="Email"
+              required
+            />
+            <textarea
+              name="message"
+              class="feedback-input"
+              placeholder="Message"
+              required
+            ></textarea>
+            <!-- <input type="submit" value="Send"/> -->
+            <button class="btn-submit button">
+              <span class="fas fa-paper-plane"></span>
+              Send
+            </button>
+          </form>
+        </div>
+
+        <svg xmlns="http://www.w3.org/2000/svg" style="display: none">
+          <symbol
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            id="circle"
+          >
+            <circle cx="8" cy="8" r="7.5"></circle>
+          </symbol>
+
+          <symbol
+            xmlns="http://www.w3.org/2000/svg"
+            viewBox="0 0 16 16"
+            id="check"
+          >
+            <path
+              d="m.65909042 4.04356308 2.43156433 2.43156433 5.83150483-5.83150482"
+              fill="none"
+              stroke-linecap="round"
+              stroke-linejoin="round"
+              stroke-width="1.25"
+            />
+          </symbol>
+        </svg>
+      </section>
+      
+    </main>
+
+    <footer class="footer">
+      <div class="container container--px">
+        <a class="footer__logo" href="#">&ltul&gt;</a>
+
+        <div class="footer__links col1">
+          <a href="#">About Me</a>
+          <a href="#">Whatsapp</a>
+          <a href="#">Telegram</a>
+        </div>
+        <div class="footer__links col2">
+          <a href="#">Repository</a>
+          <a href="#">Design</a>
+          <a href="#">Blog</a>
+        </div>
+
+        <div class="footer__cta">
+          <a href="#" target="_blank" class="button"> <i class="fas fa-download"></i> Resume</a>
+        </div>
+
+        <div class="footer__copyright">
+          © 2021 | Crafted with <i class="fas fa-heart"></i> by <a href="#">UlyaHr</a>
+        </div>
+      </div>
+    </footer>
+
+    <script src="https://unpkg.com/@lottiefiles/lottie-player@0.4.0/dist/lottie-player.js"></script>
+    <script src="https://unpkg.com/swiper/swiper-bundle.min.js"></script>
+    <script src="app/script/index.js" type="module"></script>
+  </body>
+</html>

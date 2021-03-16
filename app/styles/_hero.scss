@@ -1,0 +1,128 @@
+.hero {
+  flex-direction: column;
+  align-items: flex-start;
+  background: var(--color-background);
+  position: relative;
+  padding-top: 70px;
+  padding-bottom: 90px;
+
+  &__content {
+    display: flex;
+    flex-direction: column-reverse;
+    justify-content: space-between;
+
+    @include breakpoint-up(large) {
+      flex-direction: row;
+    }
+
+    &__left {
+      flex: auto;
+
+      @include breakpoint-up(large) {
+        display: flex;
+        flex-direction: column;
+        justify-content: center;
+      }
+
+      h1 {
+        font-size: $font-lg;
+
+        @include breakpoint-up(large) {
+          font-size: $font-xl;
+        }
+      }
+
+      h2 {
+        font-size: $font-md;
+
+        @include breakpoint-up(large) {
+          font-size: $font-lg;
+        }
+      }
+
+      h3 {
+        font-size: $font-sm;
+        color: var(--color-text);
+
+        @include breakpoint-up(large) {
+          font-size: $font-md;
+        }
+      }
+
+      p {
+        font-size: $font-sm;
+        font-weight: 400;
+
+        @include breakpoint-up(large) {
+          font-size: $font-md;
+        }
+
+        &:last-child {
+          @include breakpoint-up(large) {
+            margin-bottom: 50px;
+          }
+        }
+      }
+
+      .button {
+        width: 100%;
+        display: block;
+        // border-radius: 10px;
+        text-align: center;
+        margin-left: auto;
+        margin-right: auto;
+
+        @include breakpoint-up(medium) {
+          width: auto;
+          margin: unset;
+          display: inline-block;
+        }
+      }
+
+      .button:not(:last-child) {
+        margin-bottom: 20px;
+
+        @include breakpoint-up(medium) {
+          margin-right: 15px;
+        }
+      }
+    }
+
+    &__right {
+      flex: 1;
+
+      lottie-player {
+        width: 300px;
+        height: 300px;
+        margin: 0 auto;
+
+        @include breakpoint-up(large) {
+          width: 400px;
+          height: 400px;
+          margin: unset;
+          margin-left: auto;
+        }
+      }
+    }
+  }
+
+  &__divider {
+    @include section-divider;
+
+    .parallax1 use {
+      fill: var(--color-sec);
+      opacity: 0.4;
+    }
+    .parallax2 use {
+      fill: var(--color-accent);
+      opacity: 0.4;
+    }
+    .parallax3 use {
+      fill: var(--color-text);
+      opacity: 0.4;
+    }
+    .parallax4 use {
+      fill: #0072ff;
+    }
+  }
+}

@@ -1,0 +1,117 @@
+.footer {
+  background-color: $bg-dark2;
+  color: $bg-light;
+  padding-top: 2.1875rem;
+  padding-bottom: 2.1875rem;
+  text-align: center;
+
+  .container {
+    @include breakpoint-up(large) {
+      display: grid;
+      grid-template-columns: 1.44fr 1fr 1fr 2.27fr;
+      grid-template-rows: 1fr auto;
+      grid-template-areas:
+        "logo links1 links2 cta"
+        "logo links1 links2 copyright";
+      justify-items: start;
+      align-items: stretch;
+    }
+  }
+
+  a {
+    color: $bg-light;
+    display: inline-block;
+    &:hover {
+      color: $orange-color;
+    }
+  }
+
+  &__logo {
+    font-size: 50px;
+    font-weight: 700;
+    align-self: center;
+
+    @include breakpoint-down(large) {
+      margin-bottom: 1.625rem;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: logo;
+    }
+  }
+
+  &__links {
+    display: flex;
+    flex-direction: column;
+    font-size: 0.9875rem;
+
+    @include breakpoint-up(large) {
+      align-items: flex-start;
+    }
+
+    &.col1 {
+      @include breakpoint-down(large) {
+        margin-bottom: 1.25rem;
+      }
+
+      @include breakpoint-up(large) {
+        grid-area: links1;
+      }
+
+      > a {
+        transition: color 150ms ease-in-out;
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+
+    &.col2 {
+      @include breakpoint-down(large) {
+        margin-bottom: 2rem;
+      }
+
+      @include breakpoint-up(large) {
+        grid-area: links2;
+      }
+
+      > a {
+        &:not(:last-child) {
+          margin-bottom: 1rem;
+        }
+      }
+    }
+  }
+
+  &__cta {
+    @include breakpoint-up(large) {
+      grid-area: cta;
+      justify-self: end;
+      text-align: right;
+    }
+    .button {
+      @include breakpoint-down(large) {
+        margin-bottom: 1.625rem;
+      }
+
+      &:hover {
+        color: $bg-light;
+      }
+    }
+  }
+
+  &__copyright {
+    .fas {
+      color: #ea7384;
+    }
+
+    @include breakpoint-up(large) {
+      grid-area: copyright;
+      justify-self: end;
+      align-self: end;
+    }
+
+    color: $bg-light;
+    font-size: 0.9875rem;
+  }
+}
