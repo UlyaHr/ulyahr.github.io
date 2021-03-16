@@ -4,7 +4,7 @@ This is my first web portfolio that highlight some of project I've done in the p
 
 > Final project for AMNT X Glints FP Class on Progate
 
-### 🚀 <a target="_blank" href="https://ulyahr.github.io/portfolio-v1/">Go to Web</a> 
+### 🚀 <a target="_blank" href="https://ulyahr.github.io/">Go to Web</a> 
 
 ### 💻 Technology Used:
 
