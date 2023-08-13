@@ -1,6 +1,6 @@
 export function ContactForm() {
   const scriptURL =
-    "https://script.google.com/macros/s/AKfycby6jRTrVhNkZn2ipk8E4hsJQy7sr6AxGGqO23Tunk-8iB53DbYMo_VGnZmjN9KRPdiQ/exec";
+    "https://script.google.com/macros/s/AKfycbwrH0g4sxzOTDvZK_3SYV0JuZTVUYYSZmg8RB9JeUMReY-rY_4hZReshOfZV3ArMvQCkQ/exec";
   const form = document.forms["submit-to-google-sheet"];
   const submitBtn = document.querySelector(".btn-submit");
 

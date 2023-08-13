@@ -1,4 +1,4 @@
-import Swiper from "https://unpkg.com/swiper/swiper-bundle.esm.browser.min.js";
+import Swiper from "https://cdnjs.cloudflare.com/ajax/libs/Swiper/6.8.0/swiper-bundle.esm.browser.min.js";
 
 export function About() {
   const sliderCard = document.querySelector(".blog-slider");
